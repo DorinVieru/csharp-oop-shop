@@ -39,7 +39,11 @@
             return Prezzo + (Prezzo * IVA / 100);
         }
 
-        
+        // Metodo per ottenere il nome esteso del prodotto
+        public string NomeEsteso()
+        {
+            return Codice + " " + Nome;
+        }
     }
     internal class Program
     {
