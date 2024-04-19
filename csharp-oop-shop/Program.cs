@@ -33,6 +33,12 @@
             return Prezzo;
         }
 
+        // Metodo per ottenere il prezzo comprensivo di IVA del prodotto
+        public double PrezzoConIVA()
+        {
+            return Prezzo + (Prezzo * IVA / 100);
+        }
+
         
     }
     internal class Program
