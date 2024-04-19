@@ -27,6 +27,12 @@
             _codice = cod.Next(1000, 10000);
         }
 
+        // Metodo per ottenere il prezzo base del prodotto
+        public double PrezzoBase()
+        {
+            return Prezzo;
+        }
+
         
     }
     internal class Program
