@@ -49,7 +49,25 @@
     {
         static void Main(string[] args)
         {
-            
+            // Test della classe Prodotto
+            Prodotto prodotto1 = new Prodotto("Il Signore degli Anelli: Il Ritorno del Re", "Uno dei libri più maestosi mai scritti. Se non lo hai ancora letto, sbrigati.", 33.50, 22.0);
+            Prodotto prodotto2 = new Prodotto("Matrix", "Il film che ti mostra la realtà in cui vivi. Toc toc, Neo.", 22.0, 22.0);
+
+            Console.WriteLine("Prodotto 1:");
+            Console.WriteLine("Codice: " + prodotto1.Codice);
+            Console.WriteLine("Nome: " + prodotto1.Nome);
+            Console.WriteLine("Descrizione: " + prodotto1.Descrizione);
+            Console.WriteLine("Prezzo base: " + prodotto1.PrezzoBase());
+            Console.WriteLine("Prezzo con IVA: " + prodotto1.PrezzoConIVA());
+            Console.WriteLine("Nome esteso: " + prodotto1.NomeEsteso());
+
+            Console.WriteLine("\nProdotto 2:");
+            Console.WriteLine("Codice: " + prodotto2.Codice);
+            Console.WriteLine("Nome: " + prodotto2.Nome);
+            Console.WriteLine("Descrizione: " + prodotto2.Descrizione);
+            Console.WriteLine("Prezzo base: " + prodotto2.PrezzoBase());
+            Console.WriteLine("Prezzo con IVA: " + prodotto2.PrezzoConIVA());
+            Console.WriteLine("Nome esteso: " + prodotto2.NomeEsteso());
         }
     }
 }
