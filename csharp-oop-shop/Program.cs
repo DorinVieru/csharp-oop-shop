@@ -10,6 +10,23 @@
         public double Prezzo { get; set; }
         public double IVA { get; set; }
 
+        // Costruttore che genera un codice casuale per il prodotto
+        public Prodotto(string nome, string descrizione, double prezzo, double iva)
+        {
+            Nome = nome;
+            Descrizione = descrizione;
+            Prezzo = prezzo;
+            IVA = iva;
+            GeneraCodice();
+        }
+
+        // Metodo privato per generare un codice casuale per il prodotto
+        private void GeneraCodice()
+        {
+            Random cod = new Random();
+            _codice = cod.Next(1000, 10000);
+        }
+
         
     }
     internal class Program
